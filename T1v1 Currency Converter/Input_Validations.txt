@@ -1,0 +1,29 @@
+India - Rupee to Russia - Ruble currency conversion
+
+API used:
+=========
+I'm sending a request to exchangerate-api.com to get the conversion results
+
+Working:
+========
+We need to enter valid amount in indian rupees and then click on 'Russia - Ruble' button to get the conversion in russian rubles
+
+Input Validations:
+==================
+1. error messagebox appears when we click on Russia - Ruble for conversion if amount is empty
+
+2. error messagebox appears when we click on Russia - Ruble for conversion if amount contain alphabets, special characters and whitespaces
+
+3. error messagebox appears when we click on Russia - Ruble for conversion if amount contain more than 9 digits
+
+4. error messagebox appears when we click on Russia - Ruble for conversion if amount is negative
+
+In all above error cases the amount entered will be cleared and you can try again with a valid amount
+
+5. warning messagebox appears when we click on Russia - Ruble for conversion in case of internet connection issues
+
+6. Finally, if none of the above conditions are met, that means you have entered a valid amount and the converted amount in russian rubles will appear higlighted in red which has a value rounded upto 2 decimals.
+
+Additional Features:
+====================
+Added a 'Update rates' button, that when clicked gives the latest inr to ruble conversion provided by exchangerate-api.com for 1 inr. Also the updated time will be displayed of the last rates check.
