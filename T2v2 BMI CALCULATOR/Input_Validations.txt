@@ -1,0 +1,45 @@
+BMI CALCULATOR
+
+Reference
+=========
+https://www.iciciprulife.com/tools-and-calculators/bmi-calculator.html
+
+Working
+=======
+We need to select gender and then enter age, height in either cm or ft/in and weight, then click on 'Calculate' button to get our bmi result.
+
+Input Validations:
+==================
+=> error messagebox appears when we click on Calculate...
+1. if age, height or weight is empty.
+
+2. if height measurements have been filled in both cm and ft/in.
+
+3. if height measurements have not been filled in neither cm nor ft/in.
+
+4. if height measurements have been filled in inches but not in feet. Feet measurements should be always present if ft/in is been used for calculations. If inches measurement is not given then it will be default to 0.
+
+5. if age, height or weight measurements contain alphabets, special characters and whitespaces.
+
+6. if age, height or weight measurements are not a positive integer.
+
+7. if age is not between 2 and 120
+
+8. if height in cm is not between 10 and 304
+
+9. if height in feet is not between 1 and 9
+
+10. if height in inches is not between 0 and 12
+
+11. if weight in kgs is not between 1 and 200
+
+=> Finally, if none of the above conditions are met, that means you have entered a valid age, height, weight and the bmi will be displayed along with the weight status both higlighted in a color designated for the weight status.
+
+Below is the bmi table used for determining the weight status. The range remains the same for males and females.
+
+BMI		Weight status		Color used
+Below 18.5	Underweight		gold
+18.5-24.9	Normal weight		green
+25-29.9		Overweight		orange
+30-35		Obese			red
+Over 35		Morbid obesity		red3
