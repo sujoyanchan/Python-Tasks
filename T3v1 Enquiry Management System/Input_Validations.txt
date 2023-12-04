@@ -1,0 +1,46 @@
+ENQUIRY MANAGEMENT SYSTEM
+
+Working
+=======
+=> User will input name, phone number, address in text and will select one or more products of choice. (ie, Product1, Product2, Product3, Product4, Product5). To save the enquiry user needs to click on 'Save Enquiry' button. The saved enquiry is stored in the MongoDb Database.
+
+=> Manager admin login is provided, so admin should be able to view and delete the enquiry once they click on 'Login' button after entering their credentials. Admin credentials are maintained in the MongoDb Database.
+
+=> Once the admin is logged in, a new window titled 'Admin Menu' appears where the admin will need to enter the name of the person whose enquiry he wants to view by clicking on the 'View Enquiry' button. This will take the admin to another window titled 'View Menu' where he can see the enquiry. A 'Back to Admin' button is provided in the 'View Menu' window for the admin to go back to the 'Admin Menu' window once he has viewed the enquiry. 
+
+=> Similarly by clicking on the 'Delete Enquiry' button the enquiry of person whose name has been entered will be deleted. A confirmation popup will appear before deleting the enquiry.
+
+=> The 'Admin Menu' window has a 'Back to Main' button to go back to the 'Enquiry Management System' window that works as the Main Menu. 
+
+=> At one time only 1 window will be present on the screen.
+
+=> A confirmation popup appears if the user or admin tries to exit the app from any of the windows. 
+
+Input Validations:
+==================
+I. For User
+=> error messagebox appears when we click on 'Save Enquiry'...
+1. if name, phone number or address is empty.
+
+2. if atleast 1 product is not selected.
+
+3. if name entered contains numbers, special characters and more than 1 space.
+
+4. if name entered contains more than 20 characters.
+
+5. if phone number entered contains text, special characters and whitespaces.
+
+6. if phone number entered is not 10 digits.
+
+7. if address entered is all number or all text or contains special characters. Whitespaces are allowed.
+
+8. if address contains more than 40 characters.
+
+Finally, if none of the above conditions are met, that means you have entered a valid name, phone number, address and the enquiry will be saved.
+
+II. For Admin
+=> error messagebox appears when we click on 'Login' if the username or password entered is invalid.
+
+=> error messagebox appears when we click on 'View Enquiry' if record with entered name does not exist
+
+=> error messagebox appears when we click on 'Delete Enquiry' if record with entered name does not exist
