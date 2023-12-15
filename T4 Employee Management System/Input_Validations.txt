@@ -1,0 +1,82 @@
+EMPLOYEE MANAGEMENT SYSTEM
+
+API used:
+=========
+I'm sending a request to 
+1. IPinfo.io to get the user's city
+2. OpenWeatherMap to get the temperature in user's city
+
+Working
+=======
+=> When the user open's the app the main window titled 'Employee Management System' will appear. This window contains the following:
+
+1. 5 buttons
+	i.	Add
+	ii.	View
+	iii.	Update
+	iv.	Delete
+	v.	Charts
+
+2. Location showing the user's city & Temperature of the user's location is provided in Celsius
+
+-> On clicking the button...
+
+i. Add -> a window titled 'Add Employee' will appear. This window allows the user to input the id, name & salary of employee. 
+To save the details user needs to click on the 'Save' button. After saving, user can go back to the main window by clicking on the 'Back' button
+
+ii. View -> a window titled 'View Employee' will appear. This window allows the user to view all employees details. After viewing user can go back to the main window by clicking on the 'Back' button
+
+iii. Update -> a window titled 'Update Employee' will appear. This window allows the user to input the employee id & if the given id exists, user will be able to update either the employee name or salary or both by filling the respective fields. 
+To save the updated details user needs to click on the 'Save' button. After saving, user can go back to the main window by clicking on the 'Back' button
+
+iv. Delete -> a window titled 'Delete Employee' will appear. This window allows the user to input the employee id & if the given id exists, user will be able to delete the employee details. To delete, user needs to click on the 'Save' button. A confirmation popup will appear before deleting the enquiry. After deleting, user can go back to the main window by clicking on the 'Back' button
+
+v. Charts -> a window containing the bar chart of the top 5 salaried employees will be displayed
+
+
+
+=> The employee details are saved in the MongoDB database
+
+=> At one time only 1 window will be present on the screen.
+
+=> A confirmation popup appears if the user tries to exit the app from any of the windows. 
+
+Input Validations:
+==================
+=> error messagebox appears when we click on 'Save'...
+
+i. In 'Add Employee' window...
+
+1. if id, name or salary is empty.
+2. if id entered contains text, special characters and whitespaces.
+3. if id entered contains more than 4 digits
+4. if id already exists
+5. if name entered contains numbers, special characters and more than 1 space
+6. if name entered contains less than 2 or more than 20 characters.
+7. if salary entered contains text, special characters and whitespaces.
+8. if salary entered is not a minumum of 1000 Rupees
+9. if salary entered contains more than 10 digits
+
+ii. In 'Update Employee' window...
+
+1. if id is empty.
+2. if id entered contains text, special characters and whitespaces.
+3. if id entered contains more than 4 digits
+4. if id does not exist
+5. if both name and salary are empty
+6. if updated name entered contains numbers, special characters and more than 1 space
+7. if updated name entered contains less than 2 or more than 20 characters.
+8. if updated salary entered contains text, special characters and whitespaces.
+9. if updated salary entered is not a minumum of 1000 Rupees
+10. if updated salary entered contains more than 10 digits
+
+iii. In 'Delete Employee' window...
+
+1. if id is empty.
+2. if id entered contains text, special characters and whitespaces.
+3. if id entered contains more than 4 digits
+4. if id does not exist
+
+
+
+Finally, if none of the above conditions are met, that means you have entered a valid id, name, salary and then the desired operation will be performed.
